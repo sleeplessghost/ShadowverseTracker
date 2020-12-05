@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA8E471D-AA05-4BD0-9CAB-B81275B90F4C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IconChanger</RootNamespace>
+    <AssemblyName>IconChanger</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>res\icons\ic_luna5.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>09B5BC06FF57FCE369706CF185879B141B91A3E1</ManifestCertificateThumbprint>
+    <ManifestKeyFile>IconChanger_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\liam\Documents\Visual Studio 2008\Projects\ShadowverseTracker\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IconInjector.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="IconChanger_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="res\roboto.ttf" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="res\icons\ic_daria1.ico" />
+    <Content Include="res\icons\ic_daria2.ico" />
+    <Content Include="res\icons\ic_daria3.ico" />
+    <Content Include="res\icons\ic_daria4.ico" />
+    <Content Include="res\icons\ic_date1.ico" />
+    <Content Include="res\icons\ic_ding1.ico" />
+    <Content Include="res\icons\ic_ding2.ico" />
+    <Content Include="res\icons\ic_ding3.ico" />
+    <Content Include="res\icons\ic_forte1.ico" />
+    <Content Include="res\icons\ic_forte2.ico" />
+    <Content Include="res\icons\ic_forte3.ico" />
+    <Content Include="res\icons\ic_forte4.ico" />
+    <Content Include="res\icons\ic_hamsa1.ico" />
+    <Content Include="res\icons\ic_luna1.ico" />
+    <Content Include="res\icons\ic_luna2.ico" />
+    <Content Include="res\icons\ic_luna3.ico" />
+    <Content Include="res\icons\ic_luna4.ico" />
+    <Content Include="res\icons\ic_luna5.ico" />
+    <Content Include="res\icons\ic_luna6.ico" />
+    <Content Include="res\icons\ic_luna7.ico" />
+    <Content Include="res\icons\ic_luna8.ico" />
+    <Content Include="res\icons\ic_mordecai1.ico" />
+    <Content Include="res\icons\ic_vampy1.ico" />
+    <Content Include="res\icons\ic_vampy2.ico" />
+    <Content Include="res\icons\ic_vampy3.ico" />
+    <Content Include="res\icons\ic_vampy4.ico" />
+    <Content Include="res\icons\ic_vampy5.ico" />
+    <Content Include="res\icons\ic_vampy6.ico" />
+    <Content Include="res\images\img_daria1.png" />
+    <Content Include="res\images\img_daria2.png" />
+    <Content Include="res\images\img_daria3.png" />
+    <Content Include="res\images\img_daria4.png" />
+    <Content Include="res\images\img_date1.png" />
+    <Content Include="res\images\img_ding1.png" />
+    <Content Include="res\images\img_ding2.png" />
+    <Content Include="res\images\img_ding3.png" />
+    <Content Include="res\images\img_forte1.png" />
+    <Content Include="res\images\img_forte2.png" />
+    <Content Include="res\images\img_forte3.png" />
+    <Content Include="res\images\img_forte4.png" />
+    <Content Include="res\images\img_hamsa1.png" />
+    <Content Include="res\images\img_luna1.png" />
+    <Content Include="res\images\img_luna2.png" />
+    <Content Include="res\images\img_luna3.png" />
+    <Content Include="res\images\img_luna4.png" />
+    <Content Include="res\images\img_luna5.png" />
+    <Content Include="res\images\img_luna6.png" />
+    <Content Include="res\images\img_luna7.png" />
+    <Content Include="res\images\img_luna8.png" />
+    <Content Include="res\images\img_mordecai1.png" />
+    <Content Include="res\images\img_vampy1.png" />
+    <Content Include="res\images\img_vampy2.png" />
+    <Content Include="res\images\img_vampy3.png" />
+    <Content Include="res\images\img_vampy4.png" />
+    <Content Include="res\images\img_vampy5.png" />
+    <Content Include="res\images\img_vampy6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
